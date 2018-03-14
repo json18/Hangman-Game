@@ -1,1 +1,56 @@
-<script type="text/javascript" src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         <meta charset = "UTF-8">
+         <title> Hangman - Game </title>    
+    </head>
+    <body>
+        
+        <h1> The Hangman Game! </h1>
+
+        <h2> Press any Key to get started </h2>
+        
+
+ <script type="text/javascript"> 
+    
+    var wins = "d";
+    var currentWord = "d";
+    var guessesRemaining= "f";
+    var alreadyGuessed = "s";
+    var computerChoices = ["burrito", "fries", "salad", "guacamole", "lamb", "falafel", "pizza", "potato", 
+"coffee", "eggplant", "candy", "chocolate", "sandwich", "barbeque", "carrot", "celery", "omelet", "chicken", "salmon", "enchilada", "chowder", "plantains", "banana", "juice", "matcha"]; 
+
+    // create variable to hold array length. then loop through computerChoices array for each new game 
+    var arrayLength = computerChoices.length;
+    for (var i = 0; i < arrayLength; i++) {
+
+
+
+      /*  var wordLength = arrayLength[i].length;
+            for (var j = 0; j < wordLength; j++) { 
+                if (userGuess === wordLength[j]){
+                    alert("this works");
+                }
+            } */
+            
+        }
+
+
+    // if userGuess = a letter in the word chosen in computerChoices, uncover the word. loop through the characters in word and see if it equals that 
+ 
+    
+
+
+            
+    // userGuess = user's pick in letter
+        document.onkeyup = function(event) {
+        var userGuess = event.key;
+        console.log("Hello!");
+        }
+        
+
+</script>
+
+</body>
+
+</html>
