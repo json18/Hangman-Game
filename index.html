@@ -20,33 +20,28 @@
     var computerChoices = ["burrito", "fries", "salad", "guacamole", "lamb", "falafel", "pizza", "potato", 
 "coffee", "eggplant", "candy", "chocolate", "sandwich", "barbeque", "carrot", "celery", "omelet", "chicken", "salmon", "enchilada", "chowder", "plantains", "banana", "juice", "matcha"]; 
 
-    // create variable to hold array length. then loop through computerChoices array for each new game 
-    var arrayLength = computerChoices.length;
-    for (var i = 0; i < arrayLength; i++) {
+    document.onkeyup = function(event) {
+        var userGuess = event.key;
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+                 console.log(computerGuess);
+        var wordLength = computerGuess.length;
+
+        
 
 
 
-      /*  var wordLength = arrayLength[i].length;
-            for (var j = 0; j < wordLength; j++) { 
-                if (userGuess === wordLength[j]){
-                    alert("this works");
-                }
-            } */
-            
-        }
+        /* THIS MAKES IT SO THAT IT RECOGNIZES MY INPUT AND IF THE COMPUTER SELECTED WORD IN FACT DOES HAVE THIS LETTER
+        for (var i = 0; i< wordLength; i++) {
+            if (userGuess === computerGuess.charAt(i)) {
+            }
+        } */
 
 
-    // if userGuess = a letter in the word chosen in computerChoices, uncover the word. loop through the characters in word and see if it equals that 
- 
+    }
+
     
 
-
-            
-    // userGuess = user's pick in letter
-        document.onkeyup = function(event) {
-        var userGuess = event.key;
-        console.log("Hello!");
-        }
+ 
         
 
 </script>
